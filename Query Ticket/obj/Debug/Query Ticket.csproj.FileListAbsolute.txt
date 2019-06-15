@@ -1,0 +1,28 @@
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Query Ticket.exe.config
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Query Ticket.exe
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Query Ticket.pdb
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csprojAssemblyReference.cache
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.Login.resources
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.Properties.Resources.resources
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csproj.GenerateResource.cache
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csproj.CoreCompileInputs.cache
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.exe
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.pdb
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.MainForm.resources
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.INSERT_NEW_USER.resources
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.DELET_USER.resources
+C:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.EDIT_USER.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Query Ticket.exe.config
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Query Ticket.exe
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Query Ticket.pdb
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csprojAssemblyReference.cache
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.DELET_USER.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.EDIT_USER.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.INSERT_NEW_USER.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.Login.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.MainForm.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.Properties.Resources.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csproj.GenerateResource.cache
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csproj.CoreCompileInputs.cache
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.exe
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.pdb
