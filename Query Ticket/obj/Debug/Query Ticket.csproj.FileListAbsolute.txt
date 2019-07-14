@@ -26,3 +26,9 @@ E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.cs
 E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csproj.CoreCompileInputs.cache
 E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.exe
 E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.pdb
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.clientList.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.users.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\bin\Debug\Bunifu_UI_v1.52.dll
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query Ticket.csproj.CopyComplete
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.Backup.resources
+E:\Users\i-tech\source\repos\Query Ticket\Query Ticket\obj\Debug\Query_Ticket.PL.Restore.resources

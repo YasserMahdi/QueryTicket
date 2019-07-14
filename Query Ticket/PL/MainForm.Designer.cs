@@ -45,33 +45,25 @@
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insertNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deletUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
+            this.txtfailure = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtcost = new System.Windows.Forms.TextBox();
+            this.usersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.loginbox = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.btnlogin = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -80,7 +72,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.usersToolStripMenuItem});
+            this.usersToolStripMenuItem,
+            this.clientsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -104,33 +97,35 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // createABackupToolStripMenuItem
             // 
             this.createABackupToolStripMenuItem.Name = "createABackupToolStripMenuItem";
-            this.createABackupToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.createABackupToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.createABackupToolStripMenuItem.Text = "Create a Backup";
+            this.createABackupToolStripMenuItem.Click += new System.EventHandler(this.createABackupToolStripMenuItem_Click);
             // 
             // restoreABackupToolStripMenuItem
             // 
             this.restoreABackupToolStripMenuItem.Name = "restoreABackupToolStripMenuItem";
-            this.restoreABackupToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.restoreABackupToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.restoreABackupToolStripMenuItem.Text = "Restore a Backup";
+            this.restoreABackupToolStripMenuItem.Click += new System.EventHandler(this.restoreABackupToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.logOutToolStripMenuItem.Text = "LogOut";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -186,39 +181,30 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.insertNewUserToolStripMenuItem,
-            this.editUserToolStripMenuItem,
-            this.deletUserToolStripMenuItem});
+            this.usersToolStripMenuItem1});
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.usersToolStripMenuItem.Text = "Users";
             // 
-            // insertNewUserToolStripMenuItem
+            // clientsToolStripMenuItem
             // 
-            this.insertNewUserToolStripMenuItem.Name = "insertNewUserToolStripMenuItem";
-            this.insertNewUserToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.insertNewUserToolStripMenuItem.Text = "Insert New User";
-            this.insertNewUserToolStripMenuItem.Click += new System.EventHandler(this.insertNewUserToolStripMenuItem_Click);
+            this.clientsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientListToolStripMenuItem});
+            this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
+            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.clientsToolStripMenuItem.Text = "Clients";
             // 
-            // editUserToolStripMenuItem
+            // clientListToolStripMenuItem
             // 
-            this.editUserToolStripMenuItem.Name = "editUserToolStripMenuItem";
-            this.editUserToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.editUserToolStripMenuItem.Text = "Edit User";
-            this.editUserToolStripMenuItem.Click += new System.EventHandler(this.editUserToolStripMenuItem_Click);
-            // 
-            // deletUserToolStripMenuItem
-            // 
-            this.deletUserToolStripMenuItem.Name = "deletUserToolStripMenuItem";
-            this.deletUserToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.deletUserToolStripMenuItem.Text = "Delet User";
-            this.deletUserToolStripMenuItem.Click += new System.EventHandler(this.deletUserToolStripMenuItem_Click);
+            this.clientListToolStripMenuItem.Name = "clientListToolStripMenuItem";
+            this.clientListToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.clientListToolStripMenuItem.Text = "Client list";
+            this.clientListToolStripMenuItem.Click += new System.EventHandler(this.clientListToolStripMenuItem_Click);
             // 
             // panel1
             // 
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 28);
@@ -229,16 +215,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.bunifuFlatButton1);
+            this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.txtphone);
+            this.groupBox1.Controls.Add(this.txtfailure);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtcost);
             this.groupBox1.Location = new System.Drawing.Point(540, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(410, 310);
@@ -246,49 +231,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Insert Customer";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(20, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtName.Location = new System.Drawing.Point(20, 54);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(249, 26);
+            this.txtName.TabIndex = 4;
             // 
-            // button1
+            // txtphone
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(20, 225);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 46);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "جديد";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtphone.Location = new System.Drawing.Point(20, 97);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(249, 26);
+            this.txtphone.TabIndex = 5;
             // 
-            // textBox2
+            // txtfailure
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(20, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 26);
-            this.textBox2.TabIndex = 5;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Location = new System.Drawing.Point(137, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 46);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "حفظ";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox3.Location = new System.Drawing.Point(20, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(249, 26);
-            this.textBox3.TabIndex = 6;
+            this.txtfailure.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtfailure.Location = new System.Drawing.Point(20, 142);
+            this.txtfailure.Name = "txtfailure";
+            this.txtfailure.Size = new System.Drawing.Size(249, 26);
+            this.txtfailure.TabIndex = 6;
             // 
             // label4
             // 
@@ -335,72 +300,56 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "رقم الهاتف";
             // 
-            // textBox4
+            // txtcost
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox4.Location = new System.Drawing.Point(20, 189);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(249, 26);
-            this.textBox4.TabIndex = 7;
+            this.txtcost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtcost.Location = new System.Drawing.Point(20, 189);
+            this.txtcost.Name = "txtcost";
+            this.txtcost.Size = new System.Drawing.Size(249, 26);
+            this.txtcost.TabIndex = 7;
             // 
-            // groupBox2
+            // usersToolStripMenuItem1
             // 
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.btnlogin);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.loginbox);
-            this.groupBox2.Location = new System.Drawing.Point(79, 115);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(388, 310);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Login";
+            this.usersToolStripMenuItem1.Name = "usersToolStripMenuItem1";
+            this.usersToolStripMenuItem1.Size = new System.Drawing.Size(119, 26);
+            this.usersToolStripMenuItem1.Text = "Users";
+            this.usersToolStripMenuItem1.Click += new System.EventHandler(this.usersToolStripMenuItem1_Click);
             // 
-            // loginbox
+            // bunifuFlatButton1
             // 
-            this.loginbox.Location = new System.Drawing.Point(131, 102);
-            this.loginbox.Name = "loginbox";
-            this.loginbox.Size = new System.Drawing.Size(193, 24);
-            this.loginbox.TabIndex = 0;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(131, 141);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 24);
-            this.textBox6.TabIndex = 1;
-            // 
-            // btnlogin
-            // 
-            this.btnlogin.Location = new System.Drawing.Point(131, 192);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(193, 23);
-            this.btnlogin.TabIndex = 2;
-            this.btnlogin.Text = "login";
-            this.btnlogin.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(36, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 18);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "password";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(36, 103);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 18);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "username";
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "حفظ";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(20, 233);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(249, 44);
+            this.bunifuFlatButton1.TabIndex = 8;
+            this.bunifuFlatButton1.Text = "حفظ";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // MainForm
             // 
@@ -424,8 +373,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,32 +390,25 @@
         public System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem insertNewUserToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem editUserToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem deletUserToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcost;
+        private System.Windows.Forms.TextBox txtfailure;
+        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnlogin;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox loginbox;
+        private System.Windows.Forms.ToolStripMenuItem clientsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

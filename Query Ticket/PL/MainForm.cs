@@ -42,9 +42,15 @@ namespace Query_Ticket.PL
             this.restoreABackupToolStripMenuItem.Enabled = false;
             this.logOutToolStripMenuItem.Enabled = false;
             //this.editToolStripMenuItem.Enabled = false;
-            this.insertNewUserToolStripMenuItem.Enabled = false;
-            this.editUserToolStripMenuItem.Enabled = false;
-            this.deletUserToolStripMenuItem.Enabled = false;
+            this.usersToolStripMenuItem.Enabled = false;
+        }
+
+        public void clareBoxes()
+        {
+            this.txtName.Clear();
+            this.txtphone.Clear();
+            this.txtfailure.Clear();
+            this.txtcost.Clear();
         }
 
         private void insertNewCostumerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,9 +118,7 @@ namespace Query_Ticket.PL
             MainForm.GetMainForm.restoreABackupToolStripMenuItem.Enabled = false;
             MainForm.GetMainForm.restoreABackupToolStripMenuItem.Enabled = false;
             MainForm.GetMainForm.logOutToolStripMenuItem.Enabled = false;
-            MainForm.GetMainForm.insertNewUserToolStripMenuItem.Enabled = false;
-            MainForm.GetMainForm.deletUserToolStripMenuItem.Enabled = false;
-            MainForm.GetMainForm.editUserToolStripMenuItem.Enabled = false;
+            MainForm.GetMainForm.usersToolStripMenuItem.Enabled = false;
             
         }
 
@@ -135,6 +139,55 @@ namespace Query_Ticket.PL
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+
+        private void clientListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PL.clientList frm = new clientList();
+            frm.ShowDialog();
+        }
+
+
+        private void usersToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PL.users frm = new users();
+            frm.ShowDialog();
+        }
+
+     
+        private void createABackupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PL.Backup frm = new Backup();
+            frm.ShowDialog();
+        }
+
+        private void restoreABackupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PL.Restore frm = new Restore();
+            frm.ShowDialog();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BL.clientClass client = new BL.clientClass();
+                client.insert(txtName.Text, txtphone.Text, txtfailure.Text, Convert.ToDouble(txtcost.Text));
+
+                if (MessageBox.Show("تمت الاضافة بنجاح هل تريد طباعة الفاتورة", "تنبية", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                {
+
+                    clareBoxes();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            clareBoxes();
 
         }
     }

@@ -50,9 +50,7 @@ namespace Query_Ticket.PL
                 //MainForm.GetMainForm.insertNewCostumerToolStripMenuItem.Enabled = true;
                 //MainForm.GetMainForm.deletCustomerToolStripMenuItem.Enabled = true;
                 //MainForm.GetMainForm.editCustomerInfoToolStripMenuItem.Enabled = true;
-                MainForm.GetMainForm.insertNewUserToolStripMenuItem.Enabled = true;
-                MainForm.GetMainForm.deletUserToolStripMenuItem.Enabled = true;
-                MainForm.GetMainForm.editUserToolStripMenuItem.Enabled = true;
+                MainForm.GetMainForm.usersToolStripMenuItem.Enabled = true;
                 MainForm.GetMainForm.loginToolStripMenuItem.Enabled = false;
              
                 this.Close();
